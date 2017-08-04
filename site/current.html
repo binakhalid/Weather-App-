@@ -11,7 +11,7 @@
 <nav class="navbar navbar-default" id="nav_bar"> 
 <div class="container">
 <div class="navbar-header">
-<a href="" class="navbar-brand navbar-link weather">
+<a href="index.html" class="navbar-brand navbar-link weather">
 <img src="images/logo.png" class= "img-responsive" id="logo" alt=""> <strong> Weather App </strong>
 </a>
 <button class= "navbar-toggle collapsed" data-toggle="collapse" data-target="navcol">
@@ -29,32 +29,52 @@
 <ul class= "nav navbar-nav navbar-right" id="nav-list">
 	<li><a href="current.html">Current</a></li>
 	<li><a href="forecast.html">Forecast</a></li>
-	<li><a href="http://www.openweathermap.org" target="_blank">Open Weather Map</a></li>
+	<li><a href="">Open Weather Map</a></li>
 </ul>
 	
 
 </div>
 </div>
 </nav>
-<div class="row" id="headRow">
-<div class="col-md-12" id="colText">  
-<h2 class="text-center" id="colHead1">The most simplest Weather App</h2>
-<h1 class="text-center" id="colHead2"> to get better informarion </h1>
-<ul class="list-inline" id="list-item">
-<li>Temperature</li>
-<li>Pressure</li>
-<li>Wind Speed</li>
-<li>Humidity</li>
+<div class="jumbotron" id="header">
+<h2 class= "text-center" style= "font-size: 40px; font-weight: 600;">Get Current Weather Information</h2>
+	
+</div>
+<div class="container" style="height:650px;">
+	
+<div class="row" > 
+<div class="col-md-12">
+<h3 class="text-center text-primary">Enter City Name</h3>
+<span id="error" class="text-center"></span>
+
+</div>
+<div class="row form-group form-inline" id="cityDiv">
+	
+
+	<input type="text" name="City" id="city" class="form-control" placeholder="Enter City Name" style="margin-top:10px;">
+	<button id="submitCity" class="btn btn-primary">Search City</button>
+</div>
+
+</div>
+
+<div id="showWeather"></div>
+</div>
+<div class="footer">
+<div class="container">
+<div class="row" class="text-center" style="padding-top:30px;">
+<p style="color:white" class="text-center" >Copyright &copy; Weather App </p>
 
 
-</ul>
- </div>
+</div>
 
+</div>
+	
 
 </div>
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="weather.js"></script>
 </body>
 </html>
