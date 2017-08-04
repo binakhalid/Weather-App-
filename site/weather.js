@@ -37,7 +37,7 @@ function showResults(data){
 return '<h2 id="headin" class="text-center">Current Weather for  '+data.name+' , '+ data.sys.country+' </h2>' +
 
 "<h3 style='padding-left:40px;' >Weather: "+data.weather[0].main+"</h3>" +
-"<h3 style='padding-left:40px;' >description: <img src ='http://openweathermap.org/img/w/"+data.weather[0].icon+".png'>"+data.weather[0].description+"</h3>"+
+"<h3 style='padding-left:40px;' >description: <img src ='https://openweathermap.org/img/w/"+data.weather[0].icon+".png'>"+data.weather[0].description+"</h3>"+
 "<h3 style='padding-left:40px;' >Weather Temperature: "+data.main.temp+" &deg;C</h3>" +
 		"<h3 style='padding-left:40px;' >Pressure: "+data.main.pressure+" hpa </h3>" +
 		"<h3 style='padding-left:40px;' >Humidity: "+data.main.humidity+" % </h3>" +
