@@ -11,7 +11,7 @@ var days = $("#days").val();
 
 if (city != '' & days != '') {
 $.ajax ({
- url: 'http://api.openweathermap.org/data/2.5/forecast/daily?q=' + city + "&units=metric" + "&cnt=" + days + "&APPID=ccf5e7036115050708a555bb11f8b609",
+ url: 'https://api.openweathermap.org/data/2.5/forecast/daily?q=' + city + "&units=metric" + "&cnt=" + days + "&APPID=ccf5e7036115050708a555bb11f8b609",
 type: "GET",
 dataType: "jsonp",
 success: function(data){
@@ -20,7 +20,7 @@ success: function(data){
 
 	for (var i = 0; i < data.list.length; i++) {
 		table += "<tr>";
-table += "<td><img src='http://openweathermap.org/img/w/"+data.list[i].weather[0].icon+".png'></td>";
+table += "<td><img src='https://openweathermap.org/img/w/"+data.list[i].weather[0].icon+".png'></td>";
                     table += "<td>" + data.list[i].weather[0].main + "</td>";
                     table += "<td>" + data.list[i].weather[0].description + "</td>";
                     table += "<td>" + data.list[i].temp.morn + "&deg;C</td>";
